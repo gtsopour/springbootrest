@@ -1,5 +1,5 @@
-# Spring Boot REST API
-Spring Boot REST API project
+# Spring Boot REST API project (spring-data-rest, spring-data-jpa, h2 database)
+Spring Boot REST API project (spring-data-rest, spring-data-jpa, h2 database)
 
     'org.springframework.boot:spring-boot-starter-data-rest'
     'org.springframework.boot:spring-boot-starter-data-jpa'

@@ -5,6 +5,7 @@ Spring Boot REST API project (spring-data-rest, spring-data-jpa, h2 database)
     'org.springframework.boot:spring-boot-starter-data-jpa'
     'com.h2database:h2'
     
+Spring Security (Basic Authentication) implementation is currently a work in progress.
 
 ## CRUD Operations (Postman collection is included)
 * Get all places<br/>
@@ -58,3 +59,5 @@ Spring Boot REST API project (spring-data-rest, spring-data-jpa, h2 database)
             "description": "Geneva description (Updated)"
         }
     ]
+
+For any extra questions, please contact me at gtsopour@gmail.com. 

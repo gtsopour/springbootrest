@@ -9,6 +9,11 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public class BaseEntity {
 
+//  @Id
+//  @GeneratedValue(generator="system-uuid")
+//  @GenericGenerator(name="system-uuid", strategy = "uuid2")
+//  private final String id;
+
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   @JsonIgnore

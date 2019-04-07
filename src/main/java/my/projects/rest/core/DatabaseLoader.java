@@ -2,30 +2,30 @@ package my.projects.rest.core;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import my.projects.rest.topic.Topic;
-import my.projects.rest.topic.TopicRepository;
+import my.projects.rest.place.Place;
+import my.projects.rest.place.PlaceRepository;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DatabaseLoader implements ApplicationRunner {
-  private TopicRepository topicRepository;
+  private PlaceRepository placeRepository;
 
-  public DatabaseLoader(TopicRepository topicRepository) {
-    this.topicRepository = topicRepository;
+  public DatabaseLoader(PlaceRepository placeRepository) {
+    this.placeRepository = placeRepository;
   }
 
   @Override
   public void run(ApplicationArguments args) throws Exception {
-    ArrayList<Topic> topics = new ArrayList<Topic>();
-    String[] words = {"Multi Threading", "Inner Classes",  "Collections", "Generics", "Development", "JVM"};
+    ArrayList<Place> places = new ArrayList<Place>();
+    String[] placeNames = {"Zurich", "St. Gallen", "Bern", "Luzern", "Basel"};
 
-    Arrays.stream(words).forEach(word -> {
-      Topic topic = new Topic(word, 0);
-      topics.add(topic);
+    Arrays.stream(placeNames).forEach(name -> {
+      Place place = new Place(name, name + " description");
+      places.add(place);
     });
 
-    topicRepository.saveAll(topics);
+    placeRepository.saveAll(places);
   }
 }

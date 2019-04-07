@@ -6,7 +6,10 @@
 		"e52a5934-e82c-f71c-5717-abd4ace6ce0b",
 		"ccfd5652-6272-346f-6cce-1afc41cb06c6",
 		"586e8546-0f66-7714-7c2c-eb336a0784ab",
-		"05893d82-34c6-687e-efc1-1ef0ad10e042"
+		"05893d82-34c6-687e-efc1-1ef0ad10e042",
+		"8a17a01d-4cfb-6f19-52c8-1cbdcf558c62",
+		"dca122ca-9db9-537c-1ce0-14aed73bfb27",
+		"6bfd6fe5-7504-1930-c91b-8488cf1e849e"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -18,7 +21,7 @@
 			"id": "05893d82-34c6-687e-efc1-1ef0ad10e042",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:8080/places/id/1",
+			"url": "http://localhost:8080/places/{id}",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -30,8 +33,8 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1554647070921,
-			"name": "http://localhost:8080/places/id/{id}",
+			"time": 1554649980263,
+			"name": "Get place by id",
 			"description": "",
 			"collectionId": "3236cfc4-0cef-88d1-ca99-7ccc5d46fed5",
 			"responses": []
@@ -52,11 +55,70 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1554647112953,
-			"name": "http://localhost:8080/places/name/{name}",
+			"time": 1554650629968,
+			"name": "Get place by name",
 			"description": "",
 			"collectionId": "3236cfc4-0cef-88d1-ca99-7ccc5d46fed5",
 			"responses": []
+		},
+		{
+			"id": "6bfd6fe5-7504-1930-c91b-8488cf1e849e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/places/183d05a0-0714-4749-81a1-c136b6b0b330",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1554650948185,
+			"name": "Delete place by id",
+			"description": "",
+			"collectionId": "3236cfc4-0cef-88d1-ca99-7ccc5d46fed5",
+			"responses": []
+		},
+		{
+			"id": "8a17a01d-4cfb-6f19-52c8-1cbdcf558c62",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/places",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1554649893250,
+			"name": "Create new place",
+			"description": "",
+			"collectionId": "3236cfc4-0cef-88d1-ca99-7ccc5d46fed5",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Geneva\",\n    \"description\": \"Geneva description\"\n}"
 		},
 		{
 			"id": "ccfd5652-6272-346f-6cce-1afc41cb06c6",
@@ -75,10 +137,40 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1554647108110,
-			"name": "http://localhost:8080/places",
+			"name": "Get all places",
 			"description": "",
 			"collectionId": "3236cfc4-0cef-88d1-ca99-7ccc5d46fed5",
 			"responses": []
+		},
+		{
+			"id": "dca122ca-9db9-537c-1ce0-14aed73bfb27",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/places/183d05a0-0714-4749-81a1-c136b6b0b330",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1554651058436,
+			"name": "Update a place by id",
+			"description": "",
+			"collectionId": "3236cfc4-0cef-88d1-ca99-7ccc5d46fed5",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Geneva (Updated)\",\n    \"description\": \"Geneva description (Updated)\"\n}"
 		},
 		{
 			"id": "e52a5934-e82c-f71c-5717-abd4ace6ce0b",

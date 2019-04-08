@@ -19,7 +19,7 @@ public class DatabaseLoader implements ApplicationRunner {
   @Override
   public void run(ApplicationArguments args) throws Exception {
     ArrayList<Place> places = new ArrayList<Place>();
-    String[] placeNames = {"Zurich", "St. Gallen", "Bern", "Luzern", "Basel"};
+    String[] placeNames = {"Zurich", "St. Gallen", "Bern", "Lucern", "Basel"};
 
     Arrays.stream(placeNames).forEach(name -> {
       Place place = new Place(name, name + " description");

@@ -45,8 +45,8 @@ Spring Security (Basic Authentication) implementation is currently a work in pro
         },
         {
             "id": "698e574a-d129-45b6-b38a-002485b70c13",
-            "name": "Luzern",
-            "description": "Luzern description"
+            "name": "Lucern",
+            "description": "Lucern description"
         },
         {
             "id": "60b963a2-1476-4953-a282-cb24ad11815c",
